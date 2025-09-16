@@ -12,3 +12,14 @@ if num >= 0:
         print(num)
         num += 1
 
+# El punto y como se puede usar para separar varias sentencias en una línea
+edad = 15; print(edad)
+
+# Si el bloque a tabular solo coupa una línea, se puede escribir después dse los dos puntos
+azul = True
+if azul: print("Cielo")
+
+# Lo que vaya entre paréntesis o corchetes puede ocupar varias líneas
+dias = ['lunes', 'martes', 'miércoles'
+        'jueves', 'viernes']
+print(dias)
