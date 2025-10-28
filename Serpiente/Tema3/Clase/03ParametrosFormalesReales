@@ -1,0 +1,15 @@
+Los parámetros formales son las variables que recibe una función (ej. suma(a, b)), se crean al definir la función.
+Su contenido lo recibe al realizar la llamada a la función de los parámetros reales. Los parámetros formales son variables dentro de la función.
+
+Los parámetros reales son las expresiones que se usan cuando se llama la función, sus valores se copiaran en los parámetros formales 
+
+ej.
+num1 = 3
+num2 = 4
+suma(num1, num2) //Estos son los parámetros reales
+
+def suma(a, b) { // Estos son los parámetros formales
+    return a + b
+}
+
+

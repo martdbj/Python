@@ -8,7 +8,7 @@ try:
 
     counter = 0 
     recaudacion = 0
-    minima_recaudacion = 0
+    minima_recaudacion = 100000000
     maxima_recaudacion = -1
     minima_dia = -1
     maxima_dia = -1
