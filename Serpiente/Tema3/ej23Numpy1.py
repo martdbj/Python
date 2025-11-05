@@ -58,6 +58,7 @@ print("Dimensiones mat3", mat3.shape)
 
 #Filtrados
 print("De la matriz > 5: \n", mat3[mat3 > 5])
+
 #Media
 print("Media de la matriz: ", np.mean(mat3))
 print("Media de filas: ", np.mean(mat3, axis = 1))

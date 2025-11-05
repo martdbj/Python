@@ -18,10 +18,17 @@ print("Valor mínimo de cada característica: ", np.min(iris, axis=0))
 print("Filas con largo pétalo > 5: \n", iris[iris[:, 2] > 5])
 
 #5- Filas de 50 a 99 pero solo las columnas largo y ancho del pétalo (2 y 3)
-print("Filas 50 a 99 con largo y ancho pétalo: \n", iris[50:99, 2:4])
+print("Filas 50 a 99 con largo y ancho pétalo: \n", iris[50:100, 2:4])
 
 #6- Normalizar para que los valores estén en el rango 0-1 (X - Xmin / Xmax - Xmin)
+min_iris = iris.min()
+max_iris = iris.max()
+print("Array Iris normalizado: \n", (iris - min_iris) / (max_iris - min_iris))
 
-#7- Guada las 4 primeras columnas en una variable llamada x
+#7- Guarda las 4 primeras columnas en una variable llamada x
+x = iris[:, 0:4]
+print("X es: \n", x)
 
 #8- Guarda la última columna en una variable Y
+y = iris[:, 4]
+print("Y es: ", y)
