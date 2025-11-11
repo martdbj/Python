@@ -9,10 +9,8 @@ parques_caninos = np.genfromtxt(
     encoding='utf-8'
 )
 
-
-distritos = parques_caninos['DISTRITO']
 #https://numpy.org/devdocs/reference/generated/numpy.unique_counts.html
-distrito, cantidad = np.unique(distritos, return_counts=True)
+distrito, cantidad = np.unique(parques_caninos['DISTRITO'], return_counts=True)
 
 fig, ax = plt.subplots()
 plt.xticks(rotation=45, ha='right')
