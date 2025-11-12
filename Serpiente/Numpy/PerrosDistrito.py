@@ -18,6 +18,9 @@ numero_perros = animales2024['ESPECIE_CANINA']
 fig, ax = plt.subplots()
 plt.xticks(rotation=45, ha='right')
 ax.bar(x=distrito, height=numero_perros)
+plt.xlabel('Distrito')
+plt.ylabel('Número de perros')
+plt.title('Número de perros por distrito 2024 MADRID')
 plt.show()
 
 print(distrito)
