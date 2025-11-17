@@ -14,18 +14,18 @@ print(animales.dtype)
 
 animales2024 = animales[animales['\ufeffAÑO'] > 2023]
 distrito = animales2024['DISTRITO']
-numero_perros = animales2024['ESPECIE_CANINA']
+numero_gatos = animales2024['ESPECIE_FELINA']
 
 #https://python-charts.com/es/ranking/grafico-barras-matplotlib/
 fig, ax = plt.subplots()
 plt.xticks(rotation=45, ha='right')
-ax.bar(x=distrito, height=numero_perros)
+ax.bar(x=distrito, height=numero_gatos)
 plt.xlabel('Distrito')
-plt.ylabel('Número de perros')
-plt.title('Número de perros por distrito 2024 MADRID')
+plt.ylabel('Número de gatos')
+plt.title('Número de gatos por distrito 2024 MADRID')
 plt.show()
 
 print(distrito)
-print(numero_perros)
+print(numero_gatos)
 
 
