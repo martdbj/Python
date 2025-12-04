@@ -1,5 +1,5 @@
 # Se nombran en mayusuculas
-class Clase():
+class Clase:
     # Atributo de clase, le damos valor 1
     at_clase = 1
 

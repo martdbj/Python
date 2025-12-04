@@ -2,7 +2,7 @@
    Los metodos especiales empiezan  teminan con __
    Los atributos de objeto se inicializan en el constructor llamado __init__"""
 import math
-class Punto():
+class Punto:
     def __init__(self, x = 0, y = 0):
         self.x = x
         self.y = y

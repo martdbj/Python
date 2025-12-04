@@ -1,4 +1,4 @@
-class Alumno():
+class Alumno:
     nombre = "Clase alumno"
     contador = 0
     def __init__(self, nombre = ""):
