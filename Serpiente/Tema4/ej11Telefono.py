@@ -36,10 +36,10 @@ class Reproductor():
 
 class Movil(Telefono, Camara,  Reproductor):
     def __init__(self, numero=0, mpx=0, capacidad=0):
-        super().__init__(numero
-        self.numero = Telefono(numero)
-        self.mpx = Camara(mpx)
-        self.capacidad = Reproductor(capacidad)
+        Telefono.__init__(self, numero)
+        Camara.__init__(self, mpx)
+        Reproductor.__init__(self, capacidad)
+
 
     def __str__(self):
         return "Número {0} \n Cámara {1} \n Capacidad {2}".format(self.numero, self.mpx, self.capacidad)
