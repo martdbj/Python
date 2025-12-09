@@ -40,7 +40,6 @@ class Movil(Telefono, Camara,  Reproductor):
         Camara.__init__(self, mpx)
         Reproductor.__init__(self, capacidad)
 
-
     def __str__(self):
         return "Número {0} \n Cámara {1} \n Capacidad {2}".format(self.numero, self.mpx, self.capacidad)
 

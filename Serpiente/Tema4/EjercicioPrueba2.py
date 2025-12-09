@@ -46,6 +46,14 @@ class Empleado(Persona):
     def salario_anual(self):
         return self.salario * 12
 
+class Ingeniero(Empleado):
+    def __init__(self, nombre, edad, salario, departamento):
+        Empleado.__init__(self, nombre, edad, salario)
+        self.departamento = departamento
+
+    def __str__(self):
+        return f"{Empleado.__str__(self)} del departamento {self.departamento}"
+
 persona = Persona("Miguel", 19)
 empleado = Empleado("Sara", 16, 15000)
 
@@ -54,3 +62,6 @@ print(empleado)
 print(persona.es_mayor_edad())
 print(empleado.es_mayor_edad())
 print(empleado.salario_anual())
+
+ingeniero1 = Ingeniero("Serfio", 23, 123333, "1B")
+print(ingeniero1)
